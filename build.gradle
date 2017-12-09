@@ -121,22 +121,17 @@ publishing {
             version jar.version
         }
     }
-    repositories {
-        maven {
-            name "bintray"
-            url "https://api.bintray.com/content/barracksiot/"
-        }
-    }
 }
 
 bintray {
     user = System.getenv('BINTRAY_USER')
     key = System.getenv('BINTRAY_KEY')
     pkg {
-        repo = 'io.barracks.libs'
+        repo = 'libs'
         name = 'common-libs'
         userOrg = 'barracksiot'
         publications = ['mavenJava']
+        publish = true
         version {
             name = jar.version
         }
