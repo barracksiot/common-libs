@@ -1,0 +1,13 @@
+{
+  "type": "http://httpstatus.es/400",
+  "title": "Invalid Request Parameters",
+  "status": 400,
+  "detail": "The request you've sent contains 1 validation errors.",
+  "errors": [
+    {
+      "message": "start before end",
+      "rejected": "@!123344[sdasdsa]",
+      "field": "date"
+    }
+  ]
+}
